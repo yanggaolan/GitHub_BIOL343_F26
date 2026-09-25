@@ -2,12 +2,11 @@
 title: "BIOL343 Coding Challenge 2"
 author: "Group #"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
-output: 
-    html_document:
-        toc: true
-        number_sections: true
-        toc_float:
-            collapsed: false
+output: html_document:
+    toc: true
+    number_sections: true
+    toc_float:
+        collapsed: false
 ---
 
 # DO THIS FIRST {-}
@@ -52,46 +51,45 @@ Write a **Markdown table** (Chapter 5, *Tables*) with three columns — variable
 variable        |   description   |   units 
 ----------------|-----------------|------------
 population_type | population      | number
-ovary_width     | ovary width     | cm
-ovary_height    | ovary height    | cm
-flower_number   | flower number   | counts
+ovary_width     | ovary width
+ovary_height    |
+flower_number   |
 
 # Import and clean the data
 
 Copy `A1_Data_Excel.csv` from your Coding Challenge 1 project into this project's `data` folder. In the chunk below, import it with `read.csv()`, keep the appropriate rows and columns (as you did in Coding Challenge 1), and add the `ovary_area` column (Chapter 3, *New Columns*). Save the cleaned data as `cc1_data`.
 
 ```{r import-clean}
- cc1_data <- read.csv("./data/A1_Data_Excel.csv")
- cc1_data <- cc1_data [1:46,]
- cc1_data$ovary_area <- cc1_data$ovary_width * cc1_data$ovary_height
+# cc1_data <- 
+
 ```
 
 Now document the inspection commands you used (`class()`, `dim()`, `str()`, `head()`, `tail()`) in the chunk below. Add the chunk option that **shows this code in the report but does not run it**, so that the reader can see what you checked without pages of output.
 
-```{r inspect, eval = F}
-class(cc1_data)
-dim(cc1_data)
+```{r inspect}
+# class(cc1_data)
+
 ```
 
 # Equation
 
 Write the formula you used for ovary area as a **full-line equation** in LaTeX (Chapter 5, *Equations*), using `\times` for multiplication. Then, in a sentence of ordinary text, state its units using an **in-line equation** with a superscript.
 
-$$area = length \times height$$
-The unite is $cm^2$
+(equation here)
 
 # Dynamic table
 
 **a.** In the chunk below, calculate the mean `ovary_area` for each `population_type` with `aggregate()` (Chapter 3, *Other Functions*) and save the result as `area_means`. This chunk should run but be **completely hidden** in the report.
 
-```{r area-means, include = F}
-area_means <- aggregate(ovary_area ~ population_type, data = cc1_data, mean)
+```{r area-means}
+# area_means <- 
+
 ```
 
 **b.** Display `area_means` with `kable()` from the `knitr` package (Chapter 5, *Dynamic Tables*), including a `caption`. This chunk should show the **table but not the code**.
 
-```{r area-table, echo = F}
-kable(area_means, caption = "area means")
+```{r area-table}
+
 ```
 
 # Embedded graph
@@ -99,12 +97,6 @@ kable(area_means, caption = "area means")
 Make a histogram of `ovary_area` with `ggplot()` + `geom_histogram()` (Chapter 4), choosing a sensible `binwidth` and using `facet_wrap()` to give each `population_type` its own panel, `labs()` for axis labels with units and a title, and `theme_classic()` (Chapter 7). This chunk should show the **graph but not the code**, and it should not print package start-up messages (see the chunk header used under *Embed Graphs* in Chapter 5).
 
 ```{r area-histogram}
-ggplot(aes(x = ovary_area), data = cc1_data) +
-    geom_histogram(binwidth = 3) +
-    facet_wrap(.~population_type) +
-    labs(title = "Ovary area",
-    x = "Ovary area",
-    y = "Counts")
 
 ```
 
@@ -112,7 +104,7 @@ ggplot(aes(x = ovary_area), data = cc1_data) +
 
 Embed an image of the study species, *Solanum pimpinellifolium*, with Markdown image syntax (Chapter 5, *Images*). Save the image file in an `images` folder inside your project folder and use a **relative path**, exactly as the chapter does, so that the image is pushed to GitHub with everything else. The text in the square brackets is the caption. Below the image, give the **source** as a Markdown link to the page you took it from.
 
-![*Solanum pimpinellifolium*](./image/Hydroponic_g13.jpg)
+(image here)
 
 Source: 
 
@@ -124,7 +116,7 @@ Your project folder is a GitHub repository (Chapter 6). Before you submit:
 1. Make sure the repository contains the `.Rmd`, `data/A1_Data_Excel.csv`, `images/` with your photo, and the knitted `.html`, and that everything is **committed and pushed**.
 1. Paste the **SHA** of your final commit (Chapter 6, *Timeline*; the 7-character code shown beside each commit on GitHub) below, formatted as in-line code with back-ticks.
 
-Final commit SHA: 8495556
+Final commit SHA: 
 
 # DO THIS LAST {-}
 
