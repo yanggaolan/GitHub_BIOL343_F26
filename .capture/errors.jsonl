@@ -3,3 +3,4 @@
 {"chunk":null,"ts":"2026-09-25T12:25:18Z","pid":85477,"engine":"r","severity":"error","render":false,"text":"## Error: there is no package called ‘ggplot’"}
 {"chunk":null,"ts":"2026-09-25T12:25:23Z","pid":85477,"engine":"r","severity":"error","render":false,"text":"## Error: there is no package called ‘ggplot2’"}
 {"chunk":null,"ts":"2026-09-25T12:47:48Z","pid":85477,"engine":"r","severity":"error","render":false,"text":"## Error: object 's' not found"}
+{"chunk":null,"ts":"2026-09-25T12:55:04Z","pid":85477,"engine":"r","severity":"error","render":false,"text":"## Error: Scanner error: mapping values are not allowed in this context at line 4, column 22"}

@@ -2,11 +2,12 @@
 title: "BIOL343 Coding Challenge 2"
 author: "Group #"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
-output: html_document:
-    toc: true
-    number_sections: true
-    toc_float:
-        collapsed: false
+output: 
+    html_document:
+        toc: true
+        number_sections: true
+        toc_float:
+            collapsed: false
 ---
 
 # DO THIS FIRST {-}
