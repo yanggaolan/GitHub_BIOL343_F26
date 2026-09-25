@@ -1,0 +1,5 @@
+{"chunk":null,"ts":"2026-09-25T12:19:09Z","pid":85477,"engine":"r","severity":"warning","render":false,"warning":"## Warning: internal error 1 in R_decompress1 with libdeflate"}
+{"chunk":null,"ts":"2026-09-25T12:21:08Z","pid":85477,"engine":"r","severity":"error","render":false,"text":"## Error: there is no package called ‘dplyr’"}
+{"chunk":null,"ts":"2026-09-25T12:25:18Z","pid":85477,"engine":"r","severity":"error","render":false,"text":"## Error: there is no package called ‘ggplot’"}
+{"chunk":null,"ts":"2026-09-25T12:25:23Z","pid":85477,"engine":"r","severity":"error","render":false,"text":"## Error: there is no package called ‘ggplot2’"}
+{"chunk":null,"ts":"2026-09-25T12:47:48Z","pid":85477,"engine":"r","severity":"error","render":false,"text":"## Error: object 's' not found"}

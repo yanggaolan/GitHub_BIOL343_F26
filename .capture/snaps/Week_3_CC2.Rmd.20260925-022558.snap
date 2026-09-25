@@ -77,20 +77,21 @@ dim(cc1_data)
 Write the formula you used for ovary area as a **full-line equation** in LaTeX (Chapter 5, *Equations*), using `\times` for multiplication. Then, in a sentence of ordinary text, state its units using an **in-line equation** with a superscript.
 
 $$area = length \times height$$
-The unite is $cm^2$
+The unite is 
 
 # Dynamic table
 
 **a.** In the chunk below, calculate the mean `ovary_area` for each `population_type` with `aggregate()` (Chapter 3, *Other Functions*) and save the result as `area_means`. This chunk should run but be **completely hidden** in the report.
 
-```{r area-means, include = F}
-area_means <- aggregate(ovary_area ~ population_type, data = cc1_data, mean)
+```{r area-means}
+# area_means <- 
+
 ```
 
 **b.** Display `area_means` with `kable()` from the `knitr` package (Chapter 5, *Dynamic Tables*), including a `caption`. This chunk should show the **table but not the code**.
 
-```{r area-table, echo = F}
-kable(area_means, caption = "area means")
+```{r area-table}
+
 ```
 
 # Embedded graph
@@ -98,12 +99,6 @@ kable(area_means, caption = "area means")
 Make a histogram of `ovary_area` with `ggplot()` + `geom_histogram()` (Chapter 4), choosing a sensible `binwidth` and using `facet_wrap()` to give each `population_type` its own panel, `labs()` for axis labels with units and a title, and `theme_classic()` (Chapter 7). This chunk should show the **graph but not the code**, and it should not print package start-up messages (see the chunk header used under *Embed Graphs* in Chapter 5).
 
 ```{r area-histogram}
-ggplot(aes(x = ovary_area), data = cc1_data) +
-    geom_histogram(binwidth = 3) +
-    facet_wrap(.~population_type) +
-    labs(title = "Ovary area",
-    x = "Ovary area",
-    y = "Counts")
 
 ```
 
@@ -111,7 +106,7 @@ ggplot(aes(x = ovary_area), data = cc1_data) +
 
 Embed an image of the study species, *Solanum pimpinellifolium*, with Markdown image syntax (Chapter 5, *Images*). Save the image file in an `images` folder inside your project folder and use a **relative path**, exactly as the chapter does, so that the image is pushed to GitHub with everything else. The text in the square brackets is the caption. Below the image, give the **source** as a Markdown link to the page you took it from.
 
-![*Solanum pimpinellifolium*](./image/Hydroponic_g13.jpg)
+(image here)
 
 Source: 
 
