@@ -51,7 +51,7 @@ Write a **Markdown table** (Chapter 5, *Tables*) with three columns — variable
 -----------------------------------------------
 variable        |   description   |   units 
 ----------------|-----------------|------------
-population_type | population      | number
+population_type | population      | numbers
 ovary_width     | ovary width     | cm
 ovary_height    | ovary height    | cm
 flower_number   | flower number   | counts
